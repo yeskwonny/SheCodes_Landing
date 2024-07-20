@@ -59,7 +59,10 @@
       </nav>
     </header>
     <section class="hero">
-      <h1>A movement devoted to helping women learn tech skills.</h1>
+      <h1>
+        A <span class="hero-accent">movement</span> devoted to helping women
+        learn tech skills.
+      </h1>
       <a href="#" class="btn-primary">Start Learning</a>
     </section>
 
@@ -82,7 +85,7 @@
       <article>
         <img
           class="icon"
-          src="/img/lightning.svg"
+          src="./img/lightning.svg"
           alt="A jagged lighting bold, thick at the top and sharp at the bottom"
         />
         <h2>1 Week Flash</h2>
@@ -108,6 +111,23 @@
         </p>
         <a href="#" class="btn-primary">Apply</a>
       </article>
+    </section>
+
+    <section class="contact-form">
+      <h2>Get in touch</h2>
+      <form>
+        <label for="your-name">Your Name</label>
+        <input type="text" id="your-name" />
+        <label for="city">Your City</label>
+        <select name="city-selection" id="city">
+          <option value="Brisbane">Brisbane</option>
+          <option value="Perth">Perth</option>
+          <option value="Moon">The Moon</option>
+        </select>
+        <label for="message">Your Message</label>
+        <textarea name="message-text" id="message" rows="10"></textarea>
+        <input type="submit" value="Submit" />
+      </form>
     </section>
     <footer>
       <a
