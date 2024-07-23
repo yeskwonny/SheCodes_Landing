@@ -91,6 +91,9 @@ select {
 
 header .mobile-header {
   padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header button {
@@ -203,6 +206,8 @@ article p {
 footer {
   padding: 16px;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 footer a:has(img) {
@@ -212,4 +217,68 @@ footer a:has(img) {
 .socials-icon {
   width: 40px;
   height: 40px;
+}
+
+/* media query */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    gap: 24px;
+    margin-right: 16px;
+  }
+
+  header .mobile-header .hamburger-icon {
+    display: none;
+  }
+
+  .logo {
+    height: 100px;
+  }
+  .desktop-nav a {
+    text-decoration: none;
+    font-size: larger;
+    color: var(--black);
+  }
+
+  .desktop-nav {
+    display: inline-block;
+  }
+  .hero {
+    padding: 120px 56px;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    max-width: 70%;
+  }
+
+  .articles-container {
+    display: flex;
+  }
+
+  article {
+    padding: 56px;
+  }
+
+  .contact-form h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .contact-form form {
+    max-width: 60%;
+    margin: 40px auto;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer .socials-icon {
+    margin: 0px 20px;
+  }
 }
